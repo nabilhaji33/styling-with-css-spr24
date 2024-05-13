@@ -1,87 +1,153 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
   <meta name="viewport" content="width=device-width">
-  <title>HTML Elements</title>
-
+  <title>Stylin' with CSS</title>
   <style>
-    table.mytable {
+    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+      html{
+   background-color:#ccc;
+}
+
+
+body {
+   font-family:Arial,sans-serif;
+   background-color:#fff;
+   max-width:960px;
+   width:90%;
+   margin:auto;
+   padding:1%;
+}
+table.my-table {
       border-collapse: collapse;
     }
+
 
     table.my-table th {
       background-color: #54585d;
       color: #ffffff;
       font-weight: bold;
-      font size;
-      13px border: 1px solid #54585d;
+      font-size: 13px;
+      border: 1px solid #54585d;
     }
-table.my-table td{
+
+
+    table.my-table td {
+      padding: 15px;
+    }
+
+    table.my-table td {
+      color: #636363;
+      border: 1px solid #383c3f;
+    }
+
+    table.my-table tr {
+      background-color: #063672;
+    }
+
+    table.my-table tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    footer {
+   clear:both;
+   text-align:center;
+}
+
+  .page-header{
+    background-color: #3f6799;
+    text-align:center;
+    font-family:'Inknut Antiqua',serif;
+    width:80%;
+    margin:auto;
+    text-shadow: 4px 4px 4px #aaa;
 
 
 }
-    table.my-table td {
-      padding: 15px;
+    /* start nav rules */
+nav{
+   text-align:center; /* centers the nav */
+}
 
-    }
+
+nav a{
+   color:#000; /* font color is black */
+}
+
+
+nav ul {
+   list-style:none; /* removes the bullets */
+}
+nav li
+{
+   display:inline-block; /* makes <li> horizontal, but able to declare margins */
+   margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
   </style>
 </head>
 
 <body>
-  <h1>HTML Elements</h1>
-  <p>Clever content goes here</p>
-  <p>Clever content goes here</p>
-  <p>Clever content goes here</p>
+  <h1 class="page-header">Stylin' with CSS</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+
+    </ul>
+  </nav>
+  <p>This page demonstrates how to create a look and feel on our pages using CSS.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo lorem, ornare eget hendrerit sed, auctor a diam. Sed posuere commodo risus. Nam ut consectetur purus, at cursus mi. Duis nec metus mattis, dapibus erat et, sodales mi. Suspendisse ut dapibus turpis, in laoreet leo. Suspendisse lobortis semper ornare. Quisque.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo lorem, ornare eget hendrerit sed, auctor a diam. Sed posuere commodo risus. Nam ut consectetur purus, at cursus mi. Duis nec metus mattis, dapibus erat et, sodales mi. Suspendisse ut dapibus turpis, in laoreet leo. Suspendisse lobortis semper ornare. Quisque.</p>
   <div>
     <ul>
-      <li>Cookies</li>
-      <li>Sushi</li>
-      <li>Seafood</li>
+      <li>Jorja Smith</li>
+      <li>Jorja Smith</li>
+      <li>Jorja Smith</li>
     </ul>
     <ol>
-      <li>Avengers</li>
+      <li>Avengers </li>
       <li>Spiderman</li>
-      <li>Matrix</li>
+      <li>The Matrix</li>
     </ol>
   </div>
-  <div>
-    <img src="https://picsum.photos/200/300">
-  </div>
-  <div>Picture provided by <a href="https://picsum.photos""target=" _blank"</a> Lorem Picsum</a></div>
-
-  <p>Here is how we use the <strong> strong</strong> tag.</p>
-  <p>Here is how we use the <em>em</em> tag.</p>
-  <p>Here is how we use the <i> italize</i> tag.</p>
-  <p>Here is how we use the <b> bold </b> tag.</p>
-
-  <div>Here is inside the div. <span style="background-color: yellow;"> Here we are inside a span. </span></div>
+  <div><img src="https://picsum.photos/200/300" <img></div>
+  <div>Picture provided by <a href="https://picsum.photos" target="_blank">Lorem Picsum </a></div>
+  <p>Here is how we use the <strong>strong</strong> tag</p>
+  <p>Here is how we use the <em>em</em> tag</p>
+  <p>Here is how we use the <b>bold</b> tag</p>
+  <p>Here is how we use the <i>italize</i> tag</p>
+  <div>Here is inside the div. <span style="background-color:yellow;"> Here we are inside a span. </span> </div>
   <table class="my-table">
     <tr>
-      <th>First Name</th>
+      <th> First Name</th>
       <th> Last Name</th>
-      <th>Email Name</th>
-
+      <th> Email</th>
     </tr>
-
-    <td> John</td>
-    <td> Doe</td>
-    <td> John@example.com</td>
+    <tr>
+      <td> John </td>
+      <td> Doe </td>
+      <td>John@example.org</td>
     </tr>
-
-    <td> James</td>
-    <td> Doe</td>
-    <td> James@example.com</td>
+    <tr>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>Jane@example.org</td>
     </tr>
-   <tr>
-    <td> Judy</td>
-    <td> Doe</td>
-    <td> Judy@example.com</td>
-  </tr>
+    <tr>
+      <td>Judy</td>
+      <td>Doe</td>
+      <td>Judy@example.org</td>
+    </tr>
   </table>
-
-
-
+  <footer>Copyright &copy; 2024</footer>
 </body>
 
 </html>
